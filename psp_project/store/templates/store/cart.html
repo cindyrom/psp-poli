@@ -10,14 +10,14 @@
             <table class="table">
                 <tr>
                     <th>
-                        <h5>Items: <strong>{{order.get_cart_items}}</strong></h5>
+                        <h5>Productos: <strong>{{order.get_cart_items}}</strong></h5>
                     </th>
                     <th>
-                        <h5>Total:<strong>${{order.get_cart_total|floatformat:2}}</strong></h5>
+                        <h5>Total: <strong>${{order.get_cart_total|floatformat:2}}</strong></h5>
                     </th>
                     <th>
                         <a style="float:right; margin:5px;" class="btn btn-success"
-                            href="{% url 'checkout' %}">Checkout</a>
+                            href="{% url 'checkout' %}">Ir al Checkout</a>
                     </th>
                 </tr>
             </table>
@@ -26,7 +26,7 @@
         <br>
         <div class="box-element">
             <div class="cart-row">
-                <div style="flex:2"></div>
+                <div style="flex:2"><strong>Imagen</strong></div>
                 <div style="flex:2"><strong>Producto</strong></div>
                 <div style="flex:1"><strong>Precio</strong></div>
                 <div style="flex:1"><strong>Cantidad</strong></div>
